@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #6aaf64;
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-uniquifier {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  height: 80px;
+  background-color: rgb(186, 223, 192);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header > img {
+  width: 60px;
+  height: 50px;
+}
+
+.add-plant-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  height: 38px;
+  margin-top: 3rem;
+}
+
+.add-plant-form > input {
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  padding: 9px 13px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.add-plant-form > button {
+  font-family: "Inter", sans-serif;
+  border-radius: 6px;
+  border: none;
+  background-color: #141413;
+  color: #FAFAF8;
+  width: 150px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.add-plant-form > button::before {
+  content: "+";
+  margin-right: 5px;
+}
+
+main {
+  
+  justify-content: center;
+}
+
+.plants-list {
+  position: relative;
+  display: grid;
+  left: 36%;  
+  font-family: "Inter", serif;
+  font-weight: 600;
+}
+
+ul.plants-list {
+  margin-bottom: 48px;
+}
+
+ul.plants-list > li {
+  color: #000000;
+  line-height: 30px;
+}
+
+.get-schedule-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: rgb(186, 223, 192);
+  padding: 10px 30px;
+  width: fit-content;
+  margin: auto;
+  gap: 20px;
+
+}
+
+.plants-list-header {
+  align-items: center;
+}
+
+.get-schedule-container h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.get-schedule-container p {
+  color: #38393b;
+  font-size: 0.875rem;
+  line-height: 20px;
+  
+}
+
+.get-schedule-container button {
+  border: none;
+  border-radius: 6px;
+  background: #055e2d;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  color: #FAFAF8;
+  padding: 9px 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.plants-list-h2 {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  left: 33.8%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+.schedule-card {
+  position: relative;
+  left: 26%;
+  color: #0c0c0e;
+  line-height: 28px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  width: 50%;
+  background-color: rgb(187, 230, 193);
+  padding: 0px 30px 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+.schedule-card h2 {
+  padding-top: 20px;
+}
+
+.schedule-card ul li, .schedule-card ol li {
+  margin-bottom: 8px;
+  
+}
