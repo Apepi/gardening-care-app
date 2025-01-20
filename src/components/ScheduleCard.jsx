@@ -3,12 +3,11 @@ import remarkGfm from 'remark-gfm';
 
 export default function ScheduleCard(props) {
 
+    // This ensure that the Ai returned response can be properly rendered in the the browser with the React Markdown lib
     const strippedMarkdown = props.schedule
-        .replace(/^["'\s]*```markdown\s*/g, '')
-        // Remove the closing code fence and any trailing quotes
-        .replace(/\s*```["'\s]*$/g, '')
-        // Optional: Ensure proper line spacing
-        .replace(/\n{3,}/g, '\n\n'); // Replace multiple newlines with double newlines
+        .replace(/^["'\s]*```markdown\s*/g, '')        
+        .replace(/\s*```["'\s]*$/g, '')        
+        .replace(/\n{3,}/g, '\n\n'); 
 
         console.log(strippedMarkdown);
     return (

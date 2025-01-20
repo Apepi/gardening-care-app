@@ -6,15 +6,17 @@ import ScheduleCard from './components/ScheduleCard.jsx'
 
 
 function App() {
+
+  //Plants State
   const [plants, setPlants] = React.useState([])
-
+  //Schedule State
   const [schedule, setSchedule] = React.useState("")
-
+  // Pulling in the Ai response
   async function getSchedule() {
     const scheduleMarkdown = await getPlantCareSchedule(plants)
     setSchedule(scheduleMarkdown)
   }
-
+  // Add plant to plantList Array
   function addPlant(formData) {
     const newPlant = formData.get("plant")
     setPlants(prevPlants => [...prevPlants, newPlant])
@@ -26,9 +28,9 @@ function App() {
       <Header />
       <main>        
       <form onSubmit={(e) => {
-        e.preventDefault(); // Prevent the default form submission behavior
+        e.preventDefault(); // Preventing the default form submission behavior
         addPlant(new FormData(e.target));
-        e.target.reset();
+        e.target.reset(); // Resets the field after submit
       }} className="add-plant-form">
           <input
               type="text"
@@ -38,16 +40,15 @@ function App() {
           />
           <button type="submit">Add plant</button> 
       </form>
-
-
-        {plants.length > 0 &&
+        
+        {plants.length > 0 &&   
             <PlantsList
                 plants={plants}
                 getSchedule={getSchedule}
             />
-        }
-
-        {schedule && <ScheduleCard schedule={schedule} />}
+        } 
+              
+        {schedule && <ScheduleCard schedule={schedule} /> }
         
       </main>
     </>

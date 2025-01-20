@@ -1,4 +1,7 @@
+
+// Plants List Component
 export default function PlantsList(props) {
+    //Maps over plants added then makes a list element
     const plantsListItems = props.plants.map(plant => (
         <li key={plant}>{plant}</li>
     ))
