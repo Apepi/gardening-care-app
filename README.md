@@ -1,4 +1,5 @@
 # Plant Guru 🌿
+![GardenGurupic](https://github.com/user-attachments/assets/bff5ea8e-1a36-4094-8e64-4916ef74fa35)
 
 Plant Guru is a React application that helps you create personalized care schedules for your garden plants. Simply add your plants, and let Plant Guru generate a custom care schedule tailored to your garden's needs.
 
